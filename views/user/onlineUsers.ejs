@@ -1,0 +1,13 @@
+<h3>Online Users</h3>
+<a href="/logout"></a>
+<script src="/js/dependencies/sails.io.js"></script>
+<script>
+  io.socket.on('online', function (data) {
+    console.log("online")
+    console.log(data)
+  })
+  io.socket.on('offline', function (data) {
+    console.log("offline")
+    console.log(data)
+  })
+</script>

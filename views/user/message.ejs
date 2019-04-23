@@ -1,0 +1,11 @@
+<form action="/message" method="post">
+  <input type="text" name="message" id="message" placeholder="message">
+  <button type="submit">Send</button>
+</form>
+<script src="/js/dependencies/sails.io.js"></script>
+<script>
+  io.socket.on('online', function (data) {
+    console.log("online")
+    console.log(data)
+  })
+</script>
